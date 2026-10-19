@@ -1,4 +1,4 @@
-#INTEGRANTES: VICENTE CISTERNAS, JOAQUIN MUÑOZ
+## INTEGRANTES: VICENTE CISTERNAS, JOAQUIN MUÑOZ
 
 1 Para qué sirve BeautifulSoup y cómo se diferencia de requests?
 
@@ -24,7 +24,7 @@ Respuesta: Se muestra primero el libro con similitud de 0.75 porque tiene mayor 
 
 Respuestas: Una limitación de TF-IDF es que busca coincidencias entre palabras, pero no comprende su significado esto puede provocar que no se encuentren libros relacionados que utilicen palabras diferentes. Una mejora sería implementar una búsqueda semántica que permita encontrar libros con significados similares
 
-#EVIDENCIAS
+## EVIDENCIAS
 PS C:\Users\Estudiante\Desktop\laboratorio2> py .\procesamiento.py
 Primeros 5 libros:
                                   titulo  precio disponibilidad  calificacion
