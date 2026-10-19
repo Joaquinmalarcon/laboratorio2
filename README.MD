@@ -38,7 +38,7 @@ Informacion del DataFrame:
 <class 'pandas.core.frame.DataFrame'>
 RangeIndex: 20 entries, 0 to 19
 Data columns (total 4 columns):
- #   Column          Non-Null Count  Dtype
+    Column          Non-Null Count  Dtype
 ---  ------          --------------  -----
  0   titulo          20 non-null     object
  1   precio          20 non-null     float64
