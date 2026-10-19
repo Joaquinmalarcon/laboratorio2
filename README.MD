@@ -22,13 +22,43 @@ Respuesta: Se muestra primero el libro con similitud de 0.75 porque tiene mayor 
 
 6 Qué limitación tiene buscar solo por palabras presentes en títulos mediante TF-IDF? Proponga una mejora concreta.
 
-Respuestas: Una limitación de TF-IDF es que busca coincidencias entre palabras, pero no comprende su significado esto puede provocar que no se encuentren libros relacionados que utilicen palabras diferentes
+Respuestas: Una limitación de TF-IDF es que busca coincidencias entre palabras, pero no comprende su significado esto puede provocar que no se encuentren libros relacionados que utilicen palabras diferentes. Una mejora sería implementar una búsqueda semántica que permita encontrar libros con significados similares
 
+#EVIDENCIAS
+PS C:\Users\Estudiante\Desktop\laboratorio2> py .\procesamiento.py
+Primeros 5 libros:
+                                  titulo  precio disponibilidad  calificacion
+0                   A Light in the Attic   51.77       In stock             3
+1                     Tipping the Velvet   53.74       In stock             1
+2                             Soumission   50.10       In stock             1
+3                          Sharp Objects   47.82       In stock             4
+4  Sapiens: A Brief History of Humankind   54.23       In stock             5
+
+Informacion del DataFrame:
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 20 entries, 0 to 19
+Data columns (total 4 columns):
+ #   Column          Non-Null Count  Dtype
+---  ------          --------------  -----
+ 0   titulo          20 non-null     object
+ 1   precio          20 non-null     float64
+ 2   disponibilidad  20 non-null     object
+ 3   calificacion    20 non-null     int64
+dtypes: float64(1), int64(1), object(2)
+memory usage: 768.0+ bytes
+
+Filas y columnas:
+(20, 4)
+
+Cantidad de libros: 20
+Precio promedio: 38.048500000000004
+
+Archivo libros.csv creado correctamente.
 
 
 | Caso | Consulta utilizada | Resultado observado           | Estado |
 |------|--------------------|-------------------------------|--------|
-| T1   |    life            |Se recuperó un libro           |cumple  |
+| T1   |    life            |Se recuperó 3 libros           |cumple  |
 | T2   |   ajhsdjas123      |No se encontraron coincidencias|cumple  |
 | T3   |      LIFE          |Mismo ranking de T1            |cumple  |
 | T4   |    [Vacía]         |"Ingrese una consulta no vacia"|cumple  |
