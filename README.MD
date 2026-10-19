@@ -10,4 +10,11 @@ Respuesta: Si la estructura HTML de la página cambia, los selectores podrían d
 
 Por qué normalizar los títulos antes de implementar la búsqueda?
 
-Respuesta: Se normalizan los títulos para eliminar espacios innecesarios y convertirlos a minúsculas. Esto permite comparar los textos de forma más uniforme y facilita las búsquedas
+Respuesta: Se normalizan los títulos para eliminar espacios innecesarios y convertirlos a minúsculas permitimiento comparar los textos de forma más uniforme y facilita las búsquedas
+
+Qué función cumple fit_transform() sobre los títulos y por qué se usa transform() para la consulta?
+Respuesta: fit_transform() aprende el vocabulario de los títulos y los convierte en vectores TF-IDF. transform() convierte la consulta utilizando ese mismo vocabulario sin modificar el índice creado.
+
+Si dos libros obtienen similitudes de 0.75 y 0.20, ¿cuál se muestra primero? ¿Qué indica una puntuación cercana a cero?
+
+Respuesta: Se muestra primero el libro con similitud de 0.75 porque tiene mayor coincidencia con la consulta. Una puntuación cercana a cero indica que comparte pocas o ninguna palabra relevante con el título buscado.
